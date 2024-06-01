@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management System Dashboard</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>LeaveHub</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Leaves</a>
+                        <ul id="hidden">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">My leave summary</a></li>
+                            <li><a href="#">Leave requests</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Employees</a></li>
+                    <li><a href="#">Notifications</a></li>
+                    <li><a href="#">Activity log</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="profile.jpg" alt="User Profile Picture">
+                    <div>
+                        <h3>employee name</h3>
+                        <p>HR specialist</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>My leave summary</h1>
+                <button class="create-leave-btn">+ Create leave request</button>
+            </header>
+            <section class="leave-balance">
+                <div class="leave-type">
+                    <h2>Annual leaves</h2>
+                    <p>12 days available</p>
+                    <p>2 days taken</p>
+                </div>
+                <div class="leave-type">
+                    <h2>Casual leaves</h2>
+                    <p>12 days available</p>
+                    <p>2 days taken</p>
+                </div>
+                <div class="leave-type">
+                    <h2>Medical leaves</h2>
+                    <p>12 days available</p>
+                    <p>2 days taken</p>
+                </div>
+                <div class="leave-type">
+                    <h2>Study leaves</h2>
+                    <p>0 days available</p>
+                    <p>0 days taken</p>
+                </div>
+            </section>
+            <section class="upcoming-leaves">
+                <h2>Upcoming leaves</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Leave type</th>
+                            <th>Period</th>
+                            <th>Days</th>
+                            <th>Reason</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Casual</td>
+                            <td>13 Aug, 2022 - 14 Aug, 2022</td>
+                            <td>2</td>
+                            <td>Personal commitment</td>
+                            <td>Approved</td>
+                        </tr>
+                        <tr>
+                            <td>Medical</td>
+                            <td>20 Aug, 2022 - 21 Aug, 2022</td>
+                            <td>2</td>
+                            <td>Fever</td>
+                            <td>Approved</td>
+                        </tr>
+                        <tr>
+                            <td>Casual</td>
+                            <td>10 Oct, 2022</td>
+                            <td>1</td>
+                            <td>--</td>
+                            <td>Approved</td>
+                        </tr>
+                        <tr>
+                            <td>Study</td>
+                            <td>13 Dec, 2022 - 17 Dec, 2022</td>
+                            <td>5</td>
+                            <td>Vacation</td>
+                            <td>Approved</td>
+                        </tr>
+                        <tr>
+                            <td>Short</td>
+                            <td>24 Dec, 2022</td>
+                            <td>1</td>
+                            <td>--</td>
+                            <td>Approved</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+

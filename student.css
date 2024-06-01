@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f7fc;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2f3b52;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #1e2a38;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.sidebar-nav ul li {
+    padding: 15px 20px;
+}
+
+.sidebar-nav ul li a {
+    color: #b0bec5;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar-nav ul :hover {
+    background-color: #1e2a38;
+    color: #fff;
+    
+}
+
+.sidebar-nav ul li ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.sidebar-footer {
+    padding: 20px;
+    background-color: #1e2a38;
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.create-leave-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.leave-balance {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.leave-type {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.leave-type h2 {
+    margin-bottom: 10px;
+}
+
+.upcoming-leaves {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.upcoming-leaves table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.upcoming-leaves table th, .upcoming-leaves table td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+.upcoming-leaves table th {
+    background-color: #f4f7fc;
+}
+
+.upcoming-leaves table tbody tr:hover {
+    background-color: #f4f7fc;
+}
