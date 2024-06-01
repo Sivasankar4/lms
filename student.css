@@ -35,6 +35,10 @@ body {
     margin: 0;
 }
 
+.sidebar-nav ul ul {
+    display: none;
+}
+
 .sidebar-nav ul {
     list-style: none;
     padding: 20px 0;

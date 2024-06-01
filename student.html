@@ -15,8 +15,8 @@
             <nav class="sidebar-nav">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Leaves</a>
-                        <ul id="hidden">
+                    <li><a href="#" id="leaves-link">Leaves</a>
+                        <ul id="leaves-sublist">
                             <li><a href="#">Dashboard</a></li>
                             <li><a href="#">My leave summary</a></li>
                             <li><a href="#">Leave requests</a></li>
@@ -119,5 +119,17 @@
     </div>
 </body>
 </html>
+
+<script>
+    document.getElementById('leaves-link').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        var sublist = document.getElementById('leaves-sublist');
+        if (sublist.style.display === 'none' || sublist.style.display === '') {
+            sublist.style.display = 'block';
+        } else {
+            sublist.style.display = 'none';
+        }
+    });
+</script>
 
 
