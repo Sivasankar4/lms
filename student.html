@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leave Management System Dashboard</title>
     <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
+    <!-- <div class="wrapper">
+        <header>
+            <p class="current-date">september 2024</p>
+            <div class="icons">
+                <span class="material-symbols-outlined">chevron_left</span>
+            </div>
+        </header>
+    </div> -->
     <div class="container">
         <aside class="sidebar">
             <div class="sidebar-header">
@@ -14,24 +25,22 @@
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" id="leaves-link">Leaves</a>
+                    <li><a href="#" id="home-id">Home</a></li>
+                    <li><a href="#" id="manage-users-id">Manage Users</a></li>
+                    <li><a href="#" id="manage-leaves-id">Manage Leaves</a>
                         <ul id="leaves-sublist">
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">My leave summary</a></li>
-                            <li><a href="#">Leave requests</a></li>
+                            <li><a href="#" id="apply-leave-id">Apply leave</a></li>
+                            <li><a href="#" id="my-leave-id">My leave</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Employees</a></li>
-                    <li><a href="#">Notifications</a></li>
-                    <li><a href="#">Activity log</a></li>
+                    <li><a href="#" id="change-password-id">Change password</a></li>
                 </ul>
             </nav>
             <div class="sidebar-footer">
                 <div class="user-info">
                     <img src="profile.jpg" alt="User Profile Picture">
                     <div>
-                        <h3>employee name</h3>
+                        <h3>employee name </h3>
                         <p>HR specialist</p>
                     </div>
                 </div>
@@ -42,7 +51,7 @@
                 <h1>My leave summary</h1>
                 <button class="create-leave-btn">+ Create leave request</button>
             </header>
-            <section class="leave-balance">
+            <section class="leave-balance" >
                 <div class="leave-type">
                     <h2>Annual leaves</h2>
                     <p>12 days available</p>
@@ -118,11 +127,12 @@
         </main>
     </div>
 </body>
+
 </html>
 
 <script>
-    document.getElementById('leaves-link').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
+    document.getElementById('manage-leaves-id').addEventListener('click', function (event) {
+        event.preventDefault();
         var sublist = document.getElementById('leaves-sublist');
         if (sublist.style.display === 'none' || sublist.style.display === '') {
             sublist.style.display = 'block';
@@ -130,6 +140,5 @@
             sublist.style.display = 'none';
         }
     });
+    document.getElementById()
 </script>
-
-
