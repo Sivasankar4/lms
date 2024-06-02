@@ -10,14 +10,6 @@
 </head>
 
 <body>
-    <!-- <div class="wrapper">
-        <header>
-            <p class="current-date">september 2024</p>
-            <div class="icons">
-                <span class="material-symbols-outlined">chevron_left</span>
-            </div>
-        </header>
-    </div> -->
     <div class="container">
         <aside class="sidebar">
             <div class="sidebar-header">
@@ -40,105 +32,211 @@
                 <div class="user-info">
                     <img src="profile.jpg" alt="User Profile Picture">
                     <div>
-                        <h3>employee name </h3>
-                        <p>HR specialist</p>
+                        <h3>Employee Name</h3>
+                        <p>HR Specialist</p>
                     </div>
                 </div>
             </div>
         </aside>
         <main class="main-content">
-            <header class="header">
-                <h1>My leave summary</h1>
-                <button class="create-leave-btn">+ Create leave request</button>
-            </header>
-            <section class="leave-balance" >
-                <div class="leave-type">
-                    <h2>Annual leaves</h2>
-                    <p>12 days available</p>
-                    <p>2 days taken</p>
-                </div>
-                <div class="leave-type">
-                    <h2>Casual leaves</h2>
-                    <p>12 days available</p>
-                    <p>2 days taken</p>
-                </div>
-                <div class="leave-type">
-                    <h2>Medical leaves</h2>
-                    <p>12 days available</p>
-                    <p>2 days taken</p>
-                </div>
-                <div class="leave-type">
-                    <h2>Study leaves</h2>
-                    <p>0 days available</p>
-                    <p>0 days taken</p>
+            <section class="home" id="home-section">
+                <header class="header">
+                    <h1>My leave summary</h1>
+                    <button class="create-leave-btn">+ Create leave request</button>
+                </header>
+                <section class="leave-balance">
+                    <div class="leave-type">
+                        <h2>Annual leaves</h2>
+                        <p>12 days available</p>
+                        <p>2 days taken</p>
+                    </div>
+                    <div class="leave-type">
+                        <h2>Casual leaves</h2>
+                        <p>12 days available</p>
+                        <p>2 days taken</p>
+                    </div>
+                    <div class="leave-type">
+                        <h2>Medical leaves</h2>
+                        <p>12 days available</p>
+                        <p>2 days taken</p>
+                    </div>
+                    <div class="leave-type">
+                        <h2>Study leaves</h2>
+                        <p>0 days available</p>
+                        <p>0 days taken</p>
+                    </div>
+                </section>
+                <section class="upcoming-leaves">
+                    <h2>Upcoming leaves</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Leave type</th>
+                                <th>Period</th>
+                                <th>Days</th>
+                                <th>Reason</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Casual</td>
+                                <td>13 Aug, 2022 - 14 Aug, 2022</td>
+                                <td>2</td>
+                                <td>Personal commitment</td>
+                                <td>Approved</td>
+                            </tr>
+                            <tr>
+                                <td>Medical</td>
+                                <td>20 Aug, 2022 - 21 Aug, 2022</td>
+                                <td>2</td>
+                                <td>Fever</td>
+                                <td>Approved</td>
+                            </tr>
+                            <tr>
+                                <td>Casual</td>
+                                <td>10 Oct, 2022</td>
+                                <td>1</td>
+                                <td>--</td>
+                                <td>Approved</td>
+                            </tr>
+                            <tr>
+                                <td>Study</td>
+                                <td>13 Dec, 2022 - 17 Dec, 2022</td>
+                                <td>5</td>
+                                <td>Vacation</td>
+                                <td>Approved</td>
+                            </tr>
+                            <tr>
+                                <td>Short</td>
+                                <td>24 Dec, 2022</td>
+                                <td>1</td>
+                                <td>--</td>
+                                <td>Approved</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+            <section class="manage-users" id="manage-users-section">
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Leave type</th>
+                                <th>Period</th>
+                                <th>Days</th>
+                                <th>Reason</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Casual</td>
+                                <td>13 Aug, 2022 - 14 Aug, 2022</td>
+                                <td>2</td>
+                                <td>Personal commitment</td>
+                                <td>Approved</td>
+                            </tr>
+                            <tr>
+                                <td>Medical</td>
+                                <td>20 Aug, 2022 - 21 Aug, 2022</td>
+                                <td>2</td>
+                                <td>Fever</td>
+                                <td>Approved</td>
+                            </tr>
+                            <tr>
+                                <td>Casual</td>
+                                <td>10 Oct, 2022</td>
+                                <td>1</td>
+                                <td>--</td>
+                                <td>Approved</td>
+                            </tr>
+                            <tr>
+                                <td>Study</td>
+                                <td>13 Dec, 2022 - 17 Dec, 2022</td>
+                                <td>5</td>
+                                <td>Vacation</td>
+                                <td>Approved</td>
+                            </tr>
+                            <tr>
+                                <td>Short</td>
+                                <td>24 Dec, 2022</td>
+                                <td>1</td>
+                                <td>--</td>
+                                <td>Approved</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </section>
-            <section class="upcoming-leaves">
-                <h2>Upcoming leaves</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Leave type</th>
-                            <th>Period</th>
-                            <th>Days</th>
-                            <th>Reason</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Casual</td>
-                            <td>13 Aug, 2022 - 14 Aug, 2022</td>
-                            <td>2</td>
-                            <td>Personal commitment</td>
-                            <td>Approved</td>
-                        </tr>
-                        <tr>
-                            <td>Medical</td>
-                            <td>20 Aug, 2022 - 21 Aug, 2022</td>
-                            <td>2</td>
-                            <td>Fever</td>
-                            <td>Approved</td>
-                        </tr>
-                        <tr>
-                            <td>Casual</td>
-                            <td>10 Oct, 2022</td>
-                            <td>1</td>
-                            <td>--</td>
-                            <td>Approved</td>
-                        </tr>
-                        <tr>
-                            <td>Study</td>
-                            <td>13 Dec, 2022 - 17 Dec, 2022</td>
-                            <td>5</td>
-                            <td>Vacation</td>
-                            <td>Approved</td>
-                        </tr>
-                        <tr>
-                            <td>Short</td>
-                            <td>24 Dec, 2022</td>
-                            <td>1</td>
-                            <td>--</td>
-                            <td>Approved</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <section class="apply-leave" id="apply-leave-section">
+                <div>
+                    <h2>Apply Leave Division</h2>
+                </div>
+            </section>
+            <section class="my-leave" id="my-leave-section">
+                <div>
+                    <h2>My Leave Division</h2>
+                </div>
+            </section>
+            <section class="change-password" id="change-password-section">
+                <div>
+                    <h2>Change Password Division</h2>
+                </div>
             </section>
         </main>
     </div>
+
+    <script>
+        // Function to show the selected section and hide the others
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main > section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Event listeners for sidebar items
+        document.getElementById('home-id').addEventListener('click', function(event) {
+            event.preventDefault();
+            showSection('home-section');
+        });
+
+        document.getElementById('manage-users-id').addEventListener('click', function(event) {
+            event.preventDefault();
+            showSection('manage-users-section');
+        });
+
+        document.getElementById('manage-leaves-id').addEventListener('click', function(event) {
+            event.preventDefault();
+            var sublist = document.getElementById('leaves-sublist');
+            if (sublist.style.display === 'none' || sublist.style.display === '') {
+                sublist.style.display = 'block';
+            } else {
+                sublist.style.display = 'none';
+            }
+        });
+
+        document.getElementById('apply-leave-id').addEventListener('click', function(event) {
+            event.preventDefault();
+            showSection('apply-leave-section');
+        });
+
+        document.getElementById('my-leave-id').addEventListener('click', function(event) {
+            event.preventDefault();
+            showSection('my-leave-section');
+        });
+
+        document.getElementById('change-password-id').addEventListener('click', function(event) {
+            event.preventDefault();
+            showSection('change-password-section');
+        });
+
+        // Initially display only the home section
+        showSection('home-section');
+    </script>
 </body>
 
 </html>
-
-<script>
-    document.getElementById('manage-leaves-id').addEventListener('click', function (event) {
-        event.preventDefault();
-        var sublist = document.getElementById('leaves-sublist');
-        if (sublist.style.display === 'none' || sublist.style.display === '') {
-            sublist.style.display = 'block';
-        } else {
-            sublist.style.display = 'none';
-        }
-    });
-    document.getElementById()
-</script>

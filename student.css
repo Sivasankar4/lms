@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -35,10 +37,6 @@ body {
     margin: 0;
 }
 
-.sidebar-nav ul ul {
-    display: none;
-}
-
 .sidebar-nav ul {
     list-style: none;
     padding: 20px 0;
@@ -54,13 +52,13 @@ body {
     display: block;
 }
 
-.sidebar-nav ul :hover {
+.sidebar-nav ul li a:hover {
     background-color: #1e2a38;
     color: #fff;
-    
 }
 
-.sidebar-nav ul li ul {
+.sidebar-nav ul ul {
+    display: none;
     list-style: none;
     padding-left: 20px;
 }
@@ -151,14 +149,4 @@ body {
 
 .upcoming-leaves table tbody tr:hover {
     background-color: #f4f7fc;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600&display=swap');
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
 }
