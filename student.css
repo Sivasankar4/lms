@@ -42,16 +42,18 @@ body {
     padding: 20px 0;
 }
 
-.sidebar-nav ul li {
+/* .sidebar-nav ul li {
     padding: 15px 20px;
-}
+} */
 
 .sidebar-nav ul li a {
     color: #b0bec5;
     text-decoration: none;
     display: block;
+    padding:15px;
 }
 
+.sidebar-nav ul li.active > a,
 .sidebar-nav ul li a:hover {
     background-color: #1e2a38;
     color: #fff;
@@ -61,6 +63,10 @@ body {
     display: none;
     list-style: none;
     padding-left: 20px;
+}
+
+.sidebar-nav ul ul li a {
+    padding: 10px 20px;
 }
 
 .sidebar-footer {
@@ -137,7 +143,8 @@ body {
     margin-top: 10px;
 }
 
-.upcoming-leaves table th, .upcoming-leaves table td {
+.upcoming-leaves table th,
+.upcoming-leaves table td {
     padding: 10px;
     border-bottom: 1px solid #e0e0e0;
     text-align: left;
@@ -149,4 +156,9 @@ body {
 
 .upcoming-leaves table tbody tr:hover {
     background-color: #f4f7fc;
+}
+
+.material-symbols-outlined:hover{
+    cursor: pointer;
+    color: rgb(204, 5, 5);
 }
