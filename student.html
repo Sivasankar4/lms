@@ -63,6 +63,21 @@
               </ul>
               <ul class="days"></ul>
             </div>
+
+        </aside>
+        <main class="main-content">
+            <section class="home" id="home-section">
+            </section>
+            <section class="upcoming-leaves" id="manage-users-section">
+                <div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>NAME</th>   
+                                <th>E-MAIL</th>
+                                <th>ROLE</th>
+                                <th>ACTION</th>
+
           </div>
           <!-- <header class="header">
                     <h1>My leave summary</h1>
@@ -100,10 +115,171 @@
                                 <th>Days</th>
                                 <th>Reason</th>
                                 <th>Status</th>
+
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
+
+                                <td>Surya R</td>
+                                <td>surya@gmail.com</td>
+                                <td>project manager</td>
+                                <td><span class="material-symbols-outlined">
+                                        note_alt
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        block
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Swetha PS</td>
+                                <td>swetha@gmail.com</td>
+                                <td>Employee</td>
+                                <td>
+                                    <span class="material-symbols-outlined">
+                                        note_alt
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        block
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Siva</td>
+                                <td>Siva@gmail.com</td>
+                                <td>Employee</td>
+                                <td>
+                                    <span class="material-symbols-outlined">
+                                        note_alt
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        block
+                                    </span>
+                                    <span class="material-symbols-outlined">
+                                        delete
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="upcoming-leaves" id="apply-leave-section">
+                <div>
+                    <h2>Apply Leave</h2>
+                    <table>
+                        <form>
+                            <tr>
+                                <td>
+                                    <label for="From Date">From Date :</label>
+                                </td>
+                                <td>
+                                    <input placeholder="From Date" type="date" id="from-date" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="To Date">To Date :</label>
+                                </td>
+                                <td>
+                                    <input type="date" id="to-date" placeholder="To Date" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="Leave Type">Leave Type :</label>
+                                </td>
+                                <td>
+                                    <select id="leave-type" name="leavelist" title="leave-type">
+                                        <option value="sick">Sick</option>
+                                        <option value="saab">Personal</option>
+                                    </select>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="leave Reason">Leave Reason</label>
+                                </td>
+                                <td>
+                                    <textarea name="Leave Reason" rows="5" cols="50" placeholder="Type Reason"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="proof">Attachments :</label>
+                                </td>
+                                <td>
+                                    <input type="file" placeholder="add files">
+                                </td>
+                            </tr>
+                        </form>
+                        <br>
+                    </table>
+                    <div class="buttons">
+                        <button class="create-leave-btn">Apply Leave</button>
+                        <button class="create-leave-btn">Cancel</button>
+                    </div>
+            </section>
+            <section class="upcoming-leaves" id="my-leave-section">
+                <div>
+                    <h2>My Leave</h2>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>FROM DATE</th>   
+                                    <th>TO DATE</th>
+                                    <th>NO OF DAYS</th>
+                                    <th>LEAVE TYPE</th>
+                                    <th>REASON</th>
+                                    <th>STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>03 Jan 2024</td>
+                                    <td>04 Jan 2024</td>
+                                    <td>1</td>
+                                    <td>CASUAL LEAVE</td>
+                                    <td>Lorem, ipsum.</td>
+                                    <td><button class="accepted">ACCEPTED</button></td>
+                                </tr>
+                                <tr>
+                                    <td>11 Jan 2024</td>
+                                    <td>15 Jan 2024</td>
+                                    <td>4</td>
+                                    <td>CASUAL LEAVE</td>
+                                    <td>Lorem, ipsum.</td>
+                                    <td><button class="rejected">REJECTED</button></td>
+                                </tr>
+                                <tr>
+                                    <td>15 Jan 2024</td>
+                                    <td>19 Jan 2024</td>
+                                    <td>4</td>
+                                    <td>CASUAL LEAVE</td>
+                                    <td>Lorem, ipsum.</td>
+                                    <td><button class="pending">PENDING</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="change-password" id="change-password-section">
+                <div>
+                    <h2>Change Password Division</h2>
+                </div>
+            </section>
+        </main>
+
                                 <td>Casual</td>
                                 <td>13 Aug, 2022 - 14 Aug, 2022</td>
                                 <td>2</td>
