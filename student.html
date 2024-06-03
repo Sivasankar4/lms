@@ -41,90 +41,13 @@
         </aside>
         <main class="main-content">
             <section class="home" id="home-section">
-                <header class="header">
-                    <h1>My leave summary</h1>
-                    <button class="create-leave-btn">+ Create leave request</button>
-                </header>
-                <section class="leave-balance">
-                    <div class="leave-type">
-                        <h2>Annual leaves</h2>
-                        <p>12 days available</p>
-                        <p>2 days taken</p>
-                    </div>
-                    <div class="leave-type">
-                        <h2>Casual leaves</h2>
-                        <p>12 days available</p>
-                        <p>2 days taken</p>
-                    </div>
-                    <div class="leave-type">
-                        <h2>Medical leaves</h2>
-                        <p>12 days available</p>
-                        <p>2 days taken</p>
-                    </div>
-                    <div class="leave-type">
-                        <h2>Study leaves</h2>
-                        <p>0 days available</p>
-                        <p>0 days taken</p>
-                    </div>
-                </section>
-                <section class="upcoming-leaves">
-                    <h2>Upcoming leaves</h2>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Leave type</th>
-                                <th>Period</th>
-                                <th>Days</th>
-                                <th>Reason</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Casual</td>
-                                <td>13 Aug, 2022 - 14 Aug, 2022</td>
-                                <td>2</td>
-                                <td>Personal commitment</td>
-                                <td>Approved</td>
-                            </tr>
-                            <tr>
-                                <td>Medical</td>
-                                <td>20 Aug, 2022 - 21 Aug, 2022</td>
-                                <td>2</td>
-                                <td>Fever</td>
-                                <td>Approved</td>
-                            </tr>
-                            <tr>
-                                <td>Casual</td>
-                                <td>10 Oct, 2022</td>
-                                <td>1</td>
-                                <td>--</td>
-                                <td>Approved</td>
-                            </tr>
-                            <tr>
-                                <td>Study</td>
-                                <td>13 Dec, 2022 - 17 Dec, 2022</td>
-                                <td>5</td>
-                                <td>Vacation</td>
-                                <td>Approved</td>
-                            </tr>
-                            <tr>
-                                <td>Short</td>
-                                <td>24 Dec, 2022</td>
-                                <td>1</td>
-                                <td>--</td>
-                                <td>Approved</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
             </section>
             <section class="upcoming-leaves" id="manage-users-section">
                 <div>
                     <table>
                         <thead>
                             <tr>
-                                <th>NAME</th>
+                                <th>NAME</th>   
                                 <th>E-MAIL</th>
                                 <th>ROLE</th>
                                 <th>ACTION</th>
@@ -182,14 +105,106 @@
                     </table>
                 </div>
             </section>
-            <section class="apply-leave" id="apply-leave-section">
+            <section class="upcoming-leaves" id="apply-leave-section">
                 <div>
-                    <h2>Apply Leave Division</h2>
-                </div>
+                    <h2>Apply Leave</h2>
+                    <table>
+                        <form>
+                            <tr>
+                                <td>
+                                    <label for="From Date">From Date :</label>
+                                </td>
+                                <td>
+                                    <input placeholder="From Date" type="date" id="from-date" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="To Date">To Date :</label>
+                                </td>
+                                <td>
+                                    <input type="date" id="to-date" placeholder="To Date" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="Leave Type">Leave Type :</label>
+                                </td>
+                                <td>
+                                    <select id="leave-type" name="leavelist" title="leave-type">
+                                        <option value="sick">Sick</option>
+                                        <option value="saab">Personal</option>
+                                    </select>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="leave Reason">Leave Reason</label>
+                                </td>
+                                <td>
+                                    <textarea name="Leave Reason" rows="5" cols="50" placeholder="Type Reason"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="proof">Attachments :</label>
+                                </td>
+                                <td>
+                                    <input type="file" placeholder="add files">
+                                </td>
+                            </tr>
+                        </form>
+                        <br>
+                    </table>
+                    <div class="buttons">
+                        <button class="create-leave-btn">Apply Leave</button>
+                        <button class="create-leave-btn">Cancel</button>
+                    </div>
             </section>
-            <section class="my-leave" id="my-leave-section">
+            <section class="upcoming-leaves" id="my-leave-section">
                 <div>
-                    <h2>My Leave Division</h2>
+                    <h2>My Leave</h2>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>FROM DATE</th>   
+                                    <th>TO DATE</th>
+                                    <th>NO OF DAYS</th>
+                                    <th>LEAVE TYPE</th>
+                                    <th>REASON</th>
+                                    <th>STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>03 Jan 2024</td>
+                                    <td>04 Jan 2024</td>
+                                    <td>1</td>
+                                    <td>CASUAL LEAVE</td>
+                                    <td>Lorem, ipsum.</td>
+                                    <td><button class="accepted">ACCEPTED</button></td>
+                                </tr>
+                                <tr>
+                                    <td>11 Jan 2024</td>
+                                    <td>15 Jan 2024</td>
+                                    <td>4</td>
+                                    <td>CASUAL LEAVE</td>
+                                    <td>Lorem, ipsum.</td>
+                                    <td><button class="rejected">REJECTED</button></td>
+                                </tr>
+                                <tr>
+                                    <td>15 Jan 2024</td>
+                                    <td>19 Jan 2024</td>
+                                    <td>4</td>
+                                    <td>CASUAL LEAVE</td>
+                                    <td>Lorem, ipsum.</td>
+                                    <td><button class="pending">PENDING</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
             <section class="change-password" id="change-password-section">

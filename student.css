@@ -154,11 +154,44 @@ body {
     background-color: #f4f7fc;
 }
 
-.upcoming-leaves table tbody tr:hover {
+/* .upcoming-leaves table tbody tr:hover {
     background-color: #f4f7fc;
-}
+} */
 
 .material-symbols-outlined:hover{
     cursor: pointer;
     color: rgb(204, 5, 5);
+}
+
+.buttons{
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+}
+
+.accepted{
+    background-color: rgb(71, 233, 71);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rejected{
+    background-color: rgb(255, 76, 76);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pending{
+    background-color: rgb(86, 86, 242);
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
