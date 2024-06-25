@@ -103,6 +103,7 @@ col-lg-10 p-4">
                                         <button th:onclick="'/edit/' + ${user.id}">Edit</button>
                                         <button th:onclick="'/delete/' + ${user.id}">Delete</button>
                                     </td>
+                                    
                                 </tr>
                             </tbody>
                         </table>
@@ -124,22 +125,22 @@ col-lg-10 p-4">
 
                                 <tr>
                                     <td> <label for="First Name">First Name :</label> </td>
-                                    <td> <input placeholder="Name" type="text" name="fname"> </td>
+                                    <td> <input placeholder="Name" type="text" name="fname" required> </td>
                                 </tr>
 
                                 <tr>
                                     <td><label for="Last Name">Last Name :</label></td>
-                                    <td><input type="text" placeholder="initial" name="lname"></td>
+                                    <td><input type="text" placeholder="initial" name="lname" required></td>
                                 </tr>
 
                                 <tr>
                                     <td><label for="E-MAIL">E-mail :</label></td>
-                                    <td><input placeholder="E-mail" type="email" name="email"></td>
+                                    <td><input placeholder="E-mail" type="email" name="email" required></td>
                                 </tr>
 
                                 <tr>
                                     <td><label for="Password">Password :</label></td>
-                                    <td><input placeholder="Password" type="password" name="password"> </td>
+                                    <td><input placeholder="Password" type="password" name="password" required> </td>
                                 </tr>
 
                                 <tr>
@@ -171,7 +172,7 @@ col-lg-10 p-4">
                                         <label for="From Date">From Date :</label>
                                     </td>
                                     <td>
-                                        <input placeholder="From Date" type="date" id="from-date" name="fromdate" />
+                                        <input placeholder="From Date" type="date" id="from-date" name="fromdate" required />
                                     </td>
                                 </tr>
                                 <tr>
@@ -179,7 +180,7 @@ col-lg-10 p-4">
                                         <label for="To Date">To Date :</label>
                                     </td>
                                     <td>
-                                        <input name="todate" type="date" id="to-date" placeholder="To Date" />
+                                        <input name="todate" type="date" id="to-date" placeholder="To Date" required/>
                                     </td>
                                 </tr>
                                 <tr>
@@ -207,7 +208,7 @@ col-lg-10 p-4">
                                         <label for="proof">Attachments :</label>
                                     </td>
                                     <td>
-                                        <input type="file" name="file" placeholder="add files">
+                                        <input type="file" name="file" placeholder="add files" required>
                                     </td>
                                 </tr>
                                 <div class="buttons">
@@ -271,17 +272,17 @@ col-lg-10 p-4">
                             <h2>Change Password</h2>
                             <tr>
                                 <td><label for="Current-password">Current-password:</label></td>
-                                <td><input type="text" placeholder="current password"></td>
+                                <td><input type="text" placeholder="current password" required></td>
                             </tr>
 
                             <tr>
                                 <td><label for="New-password">New-password:</label></td>
-                                <td><input type="text" placeholder="new password"></td>
+                                <td><input type="text" placeholder="new password" required></td>
                             </tr>
 
                             <tr>
                                 <td><label for="Re-Enter New password">Re-Enter New password:</label></td>
-                                <td><input type="text" placeholder="re enter new password"></td>
+                                <td><input type="text" placeholder="re enter new password" required></td>
                             </tr>
 
                         </table>

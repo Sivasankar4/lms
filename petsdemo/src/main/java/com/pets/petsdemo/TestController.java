@@ -60,7 +60,7 @@ public class TestController {
     }
 
     @PostMapping("/submit")
-    public String submit(@ModelAttribute Userleaves leave, @RequestParam("file") MultipartFile file,
+    public String submit(@ModelAttribute Userleaves leave, @RequestParam MultipartFile file,
             HttpSession session, Model model) {
         System.out.println(leave);
         leavesRepo.save(leave);
