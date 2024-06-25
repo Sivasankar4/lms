@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import java.nio.file.Path;
 // import java.util.List;
 
+// import org.hibernate.engine.jdbc.env.internal.LobCreationLogging_.logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -37,8 +38,10 @@ public class TestController {
     @GetMapping("/users")
     public String listUsers(Model model){
         model.addAttribute("users",userService.getAllUsers());
+        logger.info("Model content - users: {}", model.getAttribute("users"));
+        // logger.info("model content {}",model.asMap());
+        model.asMap();
         return "index";
-
     }
 
     @GetMapping("/")
@@ -55,7 +58,6 @@ public class TestController {
         repo.save(user);
         session.setAttribute("message", "User Registered Successfully...");
         model.addAttribute("message", "User Registered Successfully...");
-
         return "redirect:http://localhost:8080/test";
     }
 
