@@ -23,7 +23,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // If validation passes, you can submit the form or perform other actions
     // alert('Form submitted successfully!');
     // return true;
-    window.location.href="http://localhost:8080/test";
+    window.location.href="http://localhost:8080/users";
 });
 
 function validateUsername(username) {
